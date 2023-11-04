@@ -1,8 +1,6 @@
 library(tidyverse)
 library(nflverse)
 
-nflreadr::.clear_cache()
-
 players <- load_players() %>%
   select(gsis_id, display_name, position)
 
